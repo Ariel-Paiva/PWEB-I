@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* FUNDO AZUL + ROXO */
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 380px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* INPUT */
+.input-area {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.input-area button {
+  margin-left: 6px;
+  padding: 8px 14px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.input-area button:hover {
+  opacity: 0.9;
+}
+
+/* FILTROS */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.filters button {
+  flex: 1;
+  margin: 0 3px;
+  padding: 6px;
+  border: none;
+  border-radius: 6px;
+  background: #eee;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+/* LISTA */
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+li span {
+  flex: 1;
+}
+
+/* TAREFA CONCLUÍDA */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* BOTÕES */
+.task-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.task-buttons button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* BOTÃO CONCLUIR */
+.task-buttons button:first-child {
+  background-color: #4CAF50;
+}
+
+/* BOTÃO EXCLUIR */
+.task-buttons button:last-child {
+  background-color: #f44336;
+}
+
+/* HOVER */
+.task-buttons button:hover {
+  opacity: 0.85;
+  transform: scale(1.1);
+}
